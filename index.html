@@ -1,23 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Venu Lanka Tours</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 (free) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- HEADER (blur, no scroll effects) -->
 <header class="site-header">
     <div class="container header-container">
         <div class="logo">
             <a href="index.html">
-                <img src="assets/venu-Logo.png" alt="Venu Lanka Tours Logo">
+                <img src="assets/venu-Logo.png" alt="Venu Lanka Tours">
             </a>
         </div>
         <nav class="main-nav">
@@ -57,23 +55,23 @@
 <!-- HERO SECTION -->
 <section class="hero">
     <video autoplay muted loop playsinline class="hero-video">
-        <source src="assets/Home%20-%20Venu%20Lanka%20Tours.mp4" type="video/mp4">
+        <source src="assets/Home - Venu Lanka Tours.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-content container">
         <span class="hero-welcome">Welcome</span>
         <h1>Venu Lanka Tours</h1>
-        <p>Experience the genuine warmth and kindness of Sri Lankan hospitality, where every guest is treated with love and care. You'll be showered with kindness and generosity that will make your stay unforgettable...</p>
+        <p>Experience the genuine warmth and kindness of Sri Lankan hospitality, where every guest is treated with love and care. you'll be showered with kindness and generosity that will make your stay unforgettable...</p>
         <a href="#destinations" class="btn-primary">Plan Your Trip</a>
     </div>
 </section>
 
-<!-- ABOUT SECTION (two parts) -->
+<!-- ABOUT INTRO -->
 <section class="about-intro">
     <div class="container two-columns">
         <div class="about-col">
             <img src="assets/about-us-1-1.jpg" alt="About Venu Lanka Tours">
-            <p>Venu Lanka Tours is a proudly family-owned inbound travel agency based in Sri Lanka, established with the vision of delivering authentic hospitality, unforgettable travel experiences, and a true cultural bond between visitors and Sri Lankans.</p>
+            <p>Venu Lanka Tours is a proudly family-owned inbound travel agency based in Sri Lanka, established with the vision of delivering authentic hospitality, unforgettable travel experiences, and a true cultural bond between visitors and Sri Lankans</p>
             <a href="#services" class="btn-secondary">Our Services</a>
         </div>
         <div class="about-col">
@@ -86,7 +84,7 @@
     </div>
 </section>
 
-<!-- ABOUT US DETAIL (mission/vision) -->
+<!-- ABOUT DETAILS (with background image and single-column mission/vision/values) -->
 <section class="about-details" id="about">
     <div class="container two-columns">
         <div class="about-image">
@@ -95,7 +93,7 @@
         <div class="about-content">
             <h2>About Us</h2>
             <h5>We provide complete inbound tourism solutions in Sri Lanka, ensuring travelers enjoy every step of their journey</h5>
-            <div class="mission-vision">
+            <div class="mission-vision single-column">
                 <div class="mv-item">
                     <h3>Our Mission</h3>
                     <p>To provide exceptional inbound tourism services in Sri Lanka with genuine hospitality, cultural exchange, and unforgettable travel experiences.</p>
@@ -160,29 +158,37 @@
 <!-- DESTINATIONS SECTION -->
 <section class="destinations" id="destinations">
     <div class="container">
-        <h2>Explore the Wonders of Sri Lanka</h2>
-        <p class="section-subtitle">We provide complete inbound tourism solutions in Sri Lanka, ensuring travelers enjoy every step of their journey</p>
+        <h2 class="center-heading">Explore the Wonders of Sri Lanka</h2>
+        <p class="section-subtitle center-subtitle">We provide complete inbound tourism solutions in Sri Lanka, ensuring travelers enjoy every step of their journey</p>
         <div class="destinations-grid">
             <div class="dest-card">
-                <img src="assets/services-1-1.jpg" alt="Sigiriya">
+                <div class="dest-img-container">
+                    <img src="assets/services-1-1.jpg" alt="Sigiriya">
+                </div>
                 <h3>Sigiriya</h3>
                 <p>Ancient rock fortress with royal history and panoramic views.</p>
                 <a href="packages-destinations.html">Read More…</a>
             </div>
             <div class="dest-card">
-                <img src="assets/services-1-2.jpg" alt="Ella">
+                <div class="dest-img-container">
+                    <img src="assets/services-1-2.jpg" alt="Ella">
+                </div>
                 <h3>Ella</h3>
                 <p>Misty hills, waterfalls, and serene countryside adventures await.</p>
                 <a href="packages-destinations.html">Read More…</a>
             </div>
             <div class="dest-card">
-                <img src="assets/services-1-3.jpg" alt="Kandy">
+                <div class="dest-img-container">
+                    <img src="assets/services-1-3.jpg" alt="Kandy">
+                </div>
                 <h3>Kandy</h3>
                 <p>Sacred city blending culture, tradition & scenic mountain charm.</p>
                 <a href="packages-destinations.html">Read More…</a>
             </div>
             <div class="dest-card">
-                <img src="assets/services-1-4.jpg" alt="Galle">
+                <div class="dest-img-container">
+                    <img src="assets/services-1-4.jpg" alt="Galle">
+                </div>
                 <h3>Galle</h3>
                 <p>Colonial fort town rich in heritage and coastal beauty.</p>
                 <a href="packages-destinations.html">Read More…</a>
@@ -195,64 +201,91 @@
     </div>
 </section>
 
-<!-- PACKAGES SECTION (Trip & Travel Packages) -->
+<!-- PACKAGES SECTION -->
 <section class="packages" id="packages">
     <div class="container">
         <div class="packages-header">
-            <h2>Trips & Travel Packages</h2>
+            <h2 class="center-heading">Trips & Travel Packages</h2>
             <a href="packages-destinations.html" class="btn-outline">View All</a>
         </div>
         <div class="packages-grid">
             <div class="package-card">
-                <img src="assets/2-1-768x320.jpg" alt="7 Days Package">
-                <h3>Sri Lanka 07 Days/06 Nights Tour Package</h3>
-                <p>Start and end at Colombo Airport! With the sightseeing tour Sri Lanka 7 Day Trip, you have a 7 days...</p>
-                <a href="packages-destinations.html">Read More →</a>
+                <img src="assets/2-1-768x320.jpg" alt="7 Days">
+                <div class="package-card-content">
+                    <h3>Sri Lanka 07 Days/06 Nights Tour Package</h3>
+                    <p>Start and end at Colombo Airport! With the sightseeing tour Sri Lanka 7 Day Trip...</p>
+                    <a href="packages-destinations.html">Read More →</a>
+                </div>
             </div>
             <div class="package-card">
-                <img src="assets/2-1-1-768x320.jpg" alt="14 Days Package">
-                <h3>Sri Lanka 14 Days/13 Nights Tour Package</h3>
-                <p>Start and end at Colombo Airport! With the sightseeing tour Sri Lanka 14 Day Trip, you have a 14 days...</p>
-                <a href="packages-destinations.html">Read More →</a>
+                <img src="assets/2-1-1-768x320.jpg" alt="14 Days">
+                <div class="package-card-content">
+                    <h3>Sri Lanka 14 Days/13 Nights Tour Package</h3>
+                    <p>Start and end at Colombo Airport! With the sightseeing tour Sri Lanka 14 Day Trip...</p>
+                    <a href="packages-destinations.html">Read More →</a>
+                </div>
             </div>
             <div class="package-card">
-                <img src="assets/2-1-2-768x320.jpg" alt="20 Days Package">
-                <h3>Sri Lanka 20 Days/19 Nights Tour Package</h3>
-                <p>You don't need a whole month or more to get the enthralling experience of Sri Lanka. In fact, with a...</p>
-                <a href="packages-destinations.html">Read More →</a>
+                <img src="assets/2-1-2-768x320.jpg" alt="20 Days">
+                <div class="package-card-content">
+                    <h3>Sri Lanka 20 Days/19 Nights Tour Package</h3>
+                    <p>You don't need a whole month or more to get the enthralling experience of Sri Lanka...</p>
+                    <a href="packages-destinations.html">Read More →</a>
+                </div>
             </div>
             <div class="package-card">
-                <img src="assets/2-1-3-768x320.jpg" alt="Sigiriya Day Tour">
-                <h3>Sigiriya Full Day Tour</h3>
-                <p>You don't need a whole month or more to get the enthralling experience of Sri Lanka. In fact, with a...</p>
-                <a href="packages-destinations.html">Read More →</a>
+                <img src="assets/2-1-3-768x320.jpg" alt="Sigiriya Day">
+                <div class="package-card-content">
+                    <h3>Sigiriya Full Day Tour</h3>
+                    <p>You don't need a whole month or more to get the enthralling experience of Sri Lanka...</p>
+                    <a href="packages-destinations.html">Read More →</a>
+                </div>
             </div>
             <div class="package-card">
-                <img src="assets/2-1-3-1-768x320.jpg" alt="Ella Day Tour">
-                <h3>Ella Full Day Tour</h3>
-                <p>Ella, Sri Lanka - a mountainous town known for its cool climate, tea plantations, and breathtaking views of the Ella...</p>
-                <a href="packages-destinations.html">Read More →</a>
+                <img src="assets/2-1-3-1-768x320.jpg" alt="Ella Day">
+                <div class="package-card-content">
+                    <h3>Ella Full Day Tour</h3>
+                    <p>Ella, Sri Lanka - a mountainous town known for its cool climate, tea plantations...</p>
+                    <a href="packages-destinations.html">Read More →</a>
+                </div>
             </div>
             <div class="package-card">
-                <img src="assets/2-1-3-2-768x320.jpg" alt="Kandy Day Tour">
-                <h3>Kandy Full Day Tour</h3>
-                <p>Kandy is a large city in central Sri Lanka. It's set on a plateau surrounded by mountains, which are home...</p>
-                <a href="packages-destinations.html">Read More →</a>
+                <img src="assets/2-1-3-2-768x320.jpg" alt="Kandy Day">
+                <div class="package-card-content">
+                    <h3>Kandy Full Day Tour</h3>
+                    <p>Kandy is a large city in central Sri Lanka. It's set on a plateau surrounded by mountains...</p>
+                    <a href="packages-destinations.html">Read More →</a>
+                </div>
             </div>
-            <!-- Add more if needed, but 6 is enough for sample -->
+            <div class="package-card">
+                <img src="assets/2-1-3-4-768x320.jpg" alt="Galle Day">
+                <div class="package-card-content">
+                    <h3>Galle Full Day Tour</h3>
+                    <p>Galle is a city on the southwest coast of Sri Lanka. It's known for Galle Fort...</p>
+                    <a href="packages-destinations.html">Read More →</a>
+                </div>
+            </div>
+            <div class="package-card">
+                <img src="assets/2-1-3-5-768x320.jpg" alt="Nuwara Eliya">
+                <div class="package-card-content">
+                    <h3>Nuwara Eliya Full Day Tour</h3>
+                    <p>Nuwara Eliya is a city in the tea country hills of central Sri Lanka...</p>
+                    <a href="packages-destinations.html">Read More →</a>
+                </div>
+            </div>
         </div>
         <div class="packages-footer-cta">
             <p>Based on the Theme of "Sustainable and Eco Tourism" Our Tours Are Designed to Showcase Srilanka's Natural Beauty While Minimizing Our Impact on the Environment.</p>
-            <a href="packages-destinations.html" class="btn-secondary">Seel All Packages</a>
+            <a href="packages-destinations.html" class="btn-secondary">See All Packages</a>
         </div>
     </div>
 </section>
 
-<!-- INSIDE PICTURES GALLERY -->
+<!-- GALLERY -->
 <section class="inside-gallery" id="inside">
     <div class="container">
-        <h2>Our Inside Pictures</h2>
-        <p class="section-subtitle">Take a look at some pretty pictures captured in and around our premises.</p>
+        <h2 class="center-heading">Our Inside Pictures</h2>
+        <p class="section-subtitle center-subtitle">Take a look at some pretty pictures captured in and around our premises.</p>
         <div class="gallery-grid">
             <div class="gallery-col">
                 <img src="assets/gallery-1.jpg" alt="Gallery">
@@ -273,99 +306,87 @@
 <!-- REVIEWS SECTION -->
 <section class="reviews" id="reviews">
     <div class="container">
-        <h2>What Our Guests Say</h2>
-        <p class="section-subtitle">At Venu Lanka Tours, we are proud to have welcomed visitors from all over the world. Our guests consistently highlight:</p>
+        <h2 class="center-heading">What Our Guests Say</h2>
+        <p class="section-subtitle center-subtitle">At Venu Lanka Tours, we are proud to have welcomed visitors from all over the world. Our guests consistently highlight:</p>
         <div class="reviews-grid">
             <div class="review-card">
-                <div class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p>"Our tour with Venu Lanka Tours was simply amazing! Every moment felt special. We were treated like family and experienced Sri Lanka's beauty with true hospitality."</p>
-                <div class="reviewer">
-                    <img src="assets/testimonial1.jpg" alt="Emily Hunt">
-                    <span>Emily Hunt</span>
-                </div>
+                <div class="reviewer"><img src="assets/testimonial1.jpg" alt="Emily Hunt"><span>Emily Hunt</span></div>
             </div>
             <div class="review-card">
-                <div class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p>"Professional, kind, and truly genuine service. The team arranged everything perfectly, from hotels to activities. Every detail showed real Sri Lankan care and commitment."</p>
-                <div class="reviewer">
-                    <img src="assets/testimonial4.jpg" alt="Julie Robinson">
-                    <span>Julie Robinson</span>
-                </div>
+                <div class="reviewer"><img src="assets/testimonial4.jpg" alt="Julie Robinson"><span>Julie Robinson</span></div>
             </div>
             <div class="review-card">
-                <div class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p>"We arrived as strangers but left as family! The care, safety, and warmth from this wonderful team made our Sri Lankan journey unforgettable and heartfelt."</p>
-                <div class="reviewer">
-                    <img src="assets/testimonial2.jpg" alt="Morgan Jonathan">
-                    <span>Morgan Jonathan</span>
-                </div>
+                <div class="reviewer"><img src="assets/testimonial2.jpg" alt="Morgan Jonathan"><span>Morgan Jonathan</span></div>
             </div>
             <div class="review-card">
-                <div class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p>"Venu Lanka Tours made our trip beyond expectations! Authentic experiences, great communication, and a family touch that turned our holiday into lifelong memories."</p>
-                <div class="reviewer">
-                    <img src="assets/testimonial3.jpg" alt="James Brook">
-                    <span>James Brook</span>
-                </div>
+                <div class="reviewer"><img src="assets/testimonial3.jpg" alt="James Brook"><span>James Brook</span></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- WHY CHOOSE US SECTION -->
+<!-- WHY CHOOSE US -->
 <section class="why-choose-us" id="whychooseus">
-    <div class="container two-columns">
-        <div class="why-text">
+    <div class="container why-container">
+        <div class="why-text-col">
             <h2>Why Choose Us</h2>
             <p><strong>Trusted, travel experts delivering authentic, safe, and unforgettable experiences.</strong></p>
             <p>At Venu Lanka Tours, every journey is crafted with personal care and cultural passion. Our family ensures genuine hospitality, comfort, and professionalism, offering tailor-made tours that reflect the heart of Sri Lanka – filled with warmth, trust, and unforgettable memories.</p>
         </div>
-        <div class="why-image">
-            <img src="assets/image1-1.jpg" alt="Why Choose Us">
+        <div class="why-image-col">
+            <div class="why-image-frame">
+                <img src="assets/image1-1.jpg" alt="Why Choose Us">
+            </div>
         </div>
-        <div class="why-list">
+        <div class="why-list-col">
             <ul>
-                <li><i class="fas fa-dot-circle"></i> <strong>Professional & Reliable</strong><br>We maintain international service standards.</li>
-                <li><i class="fas fa-dot-circle"></i> <strong>Hospitality with Heart</strong><br>Guests are treated as family, not clients.</li>
-                <li><i class="fas fa-dot-circle"></i> <strong>Customized Solutions</strong><br>Tailor-made packages for each traveler.</li>
-                <li><i class="fas fa-dot-circle"></i> <strong>Cultural Bond</strong><br>Creating true friendships between locals and visitors.</li>
-                <li><i class="fas fa-dot-circle"></i> <strong>24/7 Assistance</strong><br>Always available for client support.</li>
+                <li><i class="fas fa-dot-circle"></i> <span><strong>Professional & Reliable</strong><br>We maintain international service standards.</span></li>
+                <li><i class="fas fa-dot-circle"></i> <span><strong>Hospitality with Heart</strong><br>Guests are treated as family, not clients.</span></li>
+                <li><i class="fas fa-dot-circle"></i> <span><strong>Customized Solutions</strong><br>Tailor-made packages for each traveler.</span></li>
+                <li><i class="fas fa-dot-circle"></i> <span><strong>Cultural Bond</strong><br>Creating true friendships between locals and visitors.</span></li>
+                <li><i class="fas fa-dot-circle"></i> <span><strong>24/7 Assistance</strong><br>Always available for client support.</span></li>
             </ul>
         </div>
     </div>
 </section>
 
-<!-- ORGANIC PRODUCTS SECTION -->
+<!-- ORGANIC PRODUCTS -->
 <section class="organic-products">
     <div class="container">
-        <h2>Healthy & Organic Products</h2>
-        <p class="section-subtitle">If you are looking for a healthy, Organic and fresh products, we offer best quality items to experience sri lankan cultural foods!</p>
+        <h2 class="center-heading">Healthy & Organic Products</h2>
+        <p class="section-subtitle center-subtitle">If you are looking for a healthy, Organic and fresh products, we offer best quality items to experience sri lankan cultural foods!</p>
         <div class="products-grid">
             <div class="product-card">
-                <img src="assets/Sri-Lankan-Traditional-Dehydrated-Curry-Leaves-Powder-150x150.jpg" alt="Curry Leaves Powder">
+                <div class="product-img">
+                    <img src="assets/Sri-Lankan-Traditional-Dehydrated-Curry-Leaves-Powder-150x150.jpg" alt="Curry Leaves Powder">
+                </div>
                 <h3>Sri Lankan Traditional Dehydrated Curry Leaves Powder</h3>
-                <p>Bring the essence of Sri Lankan tradition and wellness into your kitchen...</p>
-                <a href="packages-destinations.html">Purchase Now →</a>
+                <p>Bring the essence of Sri Lankan tradition and wellness into your kitchen with our premium Natural Dehydrated Curry Leaves Powder. Made...</p>
+                <a href="packages-destinations.html" class="purchase-btn">Purchase Now →</a>
             </div>
             <div class="product-card">
-                <img src="assets/cinnamon-powder-150x150.jpg" alt="Cinnamon Powder">
+                <div class="product-img">
+                    <img src="assets/cinnamon-powder-150x150.jpg" alt="Cinnamon Powder">
+                </div>
                 <h3>Cinnamon Powder</h3>
-                <p>Experience the world-renowned flavor and wellness of Sri Lankan Cinnamon...</p>
-                <a href="packages-destinations.html">Purchase Now →</a>
+                <p>Experience the world-renowned flavor and wellness of Sri Lankan Cinnamon, also known as Ceylon Cinnamon or "true cinnamon," in its...</p>
+                <a href="packages-destinations.html" class="purchase-btn">Purchase Now →</a>
             </div>
             <div class="product-card">
-                <img src="assets/Moringa-Leaf-Powder-min-scaled-1-2048x1432-1-150x150.webp" alt="Moringa Powder">
+                <div class="product-img">
+                    <img src="assets/Moringa-Leaf-Powder-min-scaled-1-2048x1432-1-150x150.webp" alt="Moringa Powder">
+                </div>
                 <h3>Organic Moronga Powder</h3>
-                <p>Discover the power of nature's "miracle tree" with our 100% Pure Moringa Leaf Powder...</p>
-                <a href="packages-destinations.html">Purchase Now →</a>
+                <p>Discover the power of nature's "miracle tree" with our 100% Pure Moringa Leaf Powder. Sourced from fresh, organically grown moringa leaves...</p>
+                <a href="packages-destinations.html" class="purchase-btn">Purchase Now →</a>
             </div>
         </div>
     </div>
@@ -376,8 +397,10 @@
     <div class="container">
         <h2>Plan an Unforgettable Experience with Venu Lanka Tours !</h2>
         <p>We can help you fit your stay and experience within your allotted budget.</p>
-        <p class="cta-phone">Book Your tour Now</p>
-        <p><a href="https://wa.me/94703771509" class="phone-link"><i class="fas fa-phone-alt"></i> +94 70 377 1509</a></p>
+        <p class="cta-book-text">Book Your tour Now</p>
+        <div class="cta-whatsapp">
+            <a href="https://wa.me/94703771509" class="phone-link"><i class="fas fa-phone-alt"></i> +94 70 377 1509</a>
+        </div>
         <a href="contact.html" class="btn-primary">Contact Us</a>
     </div>
 </section>
@@ -386,13 +409,13 @@
 <footer class="site-footer">
     <div class="container footer-grid">
         <div class="footer-col">
-            <img src="assets/venu-Logo.png" alt="Venu Lanka Tours">
+            <img src="assets/venu-Logo.png" alt="Venu Lanka Tours" class="footer-logo">
             <p><strong>Welcome to Venu Lanka Tours!</strong></p>
             <p>Experience the genuine warmth and kindness of Sri Lankan hospitality.</p>
         </div>
         <div class="footer-col">
             <h3>Navigation</h3>
-            <ul>
+            <ul class="footer-links">
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="contact.html">Get Directions</a></li>
@@ -402,13 +425,20 @@
             </ul>
         </div>
         <div class="footer-col">
+            <h3>TripAdvisor</h3>
+            <div class="tripadvisor-footer">
+                <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="TripAdvisor" style="max-width: 150px;"></a>
+                <div class="trustindex-widget-placeholder">
+                    <!-- Trustindex widget will be loaded by JS -->
+                    <div id="trustindex-widget"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-col">
             <h3>Contact</h3>
             <p>Venu Lanka Tours,<br>Sapumal Colany, Boralankada, Dehiowita, Sri Lanka</p>
             <p>+94 70 377 1509</p>
             <p><a href="mailto:info@venulankatours.lk">info@venulankatours.lk</a></p>
-        </div>
-        <div class="footer-col">
-            <h3>Follow Us</h3>
             <div class="social-icons">
                 <a href="https://www.facebook.com/people/venu-lanka-tours/61581256981717/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -424,6 +454,6 @@
     </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
