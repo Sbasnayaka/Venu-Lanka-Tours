@@ -32,13 +32,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Load Trustindex widget for TripAdvisor
-window.addEventListener('load', () => {
-    // Check if widget placeholder exists
-    if (document.querySelector('.trustindex-widget-placeholder')) {
-        const script = document.createElement('script');
-        script.src = 'https://cdn.trustindex.io/loader.js?wp-widget';
-        script.async = true;
-        document.body.appendChild(script);
-    }
-});
+// Trustindex TripAdvisor widget loads automatically via the footer HTML
+// No extra script needed
