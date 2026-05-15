@@ -1,124 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Us - Venu Lanka Tours</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Custom CSS -->
+    <!-- Shared main styles -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Page-specific review styles -->
+    <link rel="stylesheet" href="css/review.css">
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="scrolled">
-        <div class="container header-container">
-            <a href="index.html" class="logo">
+<!-- ==================== HEADER (identical to home page) ==================== -->
+<header class="site-header">
+    <div class="container header-container">
+        <div class="logo">
+            <a href="index.html">
                 <img src="assets/venu-Logo.png" alt="Venu Lanka Tours">
             </a>
-            
-            <nav class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="index.html#about" class="nav-link">About Us</a>
-                <a href="index.html#services" class="nav-link">Our Services</a>
-                <a href="packages-destinations.html" class="nav-link">Packages</a>
-                <a href="google-review.html" class="nav-link active">Review Us</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </nav>
-
-            <a href="contact.html" class="btn">Book Now</a>
-
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About Us <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#about">Who We Are</a></li>
+                        <li><a href="index.html#members">Our Team</a></li>
+                        <li><a href="index.html#whychooseus">Why Choose Us</a></li>
+                        <li><a href="index.html#inside">Happy Moments</a></li>
+                        <li><a href="index.html#reviews">Clients' Reviews</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#services">Our Services</a></li>
+                <li class="dropdown">
+                    <a href="#">Packages <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="packages-destinations.html">Our Packages</a></li>
+                        <li><a href="index.html#destinations">Destinations</a></li>
+                    </ul>
+                </li>
+                <li><a href="google-review.html" class="active">Review Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
             <div class="mobile-toggle">
                 <i class="fas fa-bars"></i>
             </div>
+        </nav>
+        <div class="header-btn">
+            <a href="packages-destinations.html#quote" class="btn-book">Book Now</a>
         </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <!-- Page Banner -->
-        <section class="section-padding" style="background-color: var(--primary); color: var(--white); text-align: center; margin-top: var(--header-height);">
-            <div class="container">
-                <h1 style="color: var(--white);">Write a Review</h1>
-                <p>Share your unforgettable experience with Venu Lanka Tours and help future travelers discover the beauty of Sri Lanka through your story.</p>
+<!-- ==================== HERO SECTION ==================== -->
+<section class="r-hero">
+    <div class="r-hero-content">
+        <h1 class="r-hero-title">Write a Review</h1>
+        <p class="r-hero-description">Share your unforgettable experience with Venu Lanka Tours <br> and help future travelers discover the beauty of Sri Lanka<br> through your story.</p>
+    </div>
+</section>
+
+<!-- ==================== REVIEW PLATFORMS SECTION ==================== -->
+<section class="r-platforms">
+    <div class="container r-platforms-grid">
+        <!-- TripAdvisor Column -->
+        <div class="r-platform-card">
+            <div class="r-platform-icon-tripadvisor">
+                <i class="fa fa-tripadvisor"></i>
             </div>
-        </section>
-
-        <!-- Review Platforms -->
-        <section class="section-padding">
-            <div class="container grid grid-2">
-                <!-- TripAdvisor -->
-                <div class="review-card" style="text-align: center; padding: 40px; background-color: var(--light); border-radius: 10px;">
-                    <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="TripAdvisor" style="height: 60px; margin-bottom: 20px;">
-                    <h3>Loved your journey with us? 💛</h3>
-                    <p>Share your experience and inspire others to explore Sri Lanka — review Venu Lanka Tours on TripAdvisor today!</p>
-                    <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d27896981-Reviews-Venu_Lanka_Tours-Dehiowita_Sabaragamuwa_Province.html" target="_blank" class="btn" style="background-color: #00af87; margin-top: 20px;"><i class="fab fa-tripadvisor"></i> Review on TripAdvisor</a>
-                </div>
-
-                <!-- Google -->
-                <div class="review-card" style="text-align: center; padding: 40px; background-color: var(--light); border-radius: 10px;">
-                    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" style="height: 40px; margin-bottom: 20px; filter: grayscale(1);">
-                    <h3>Enjoyed your trip with us? ⭐</h3>
-                    <p>Your feedback helps us grow! Please take a moment to leave a review on Google and share your highlights from the tour.</p>
-                    <a href="https://search.google.com/local/writereview?placeid=ChIJT_9PnRMHAzoR0-yN6f9f8f8" target="_blank" class="btn" style="background-color: #4285F4; margin-top: 20px;"><i class="fab fa-google"></i> Review on Google</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Social Proof -->
-        <section class="section-padding" style="text-align: center;">
-            <div class="container">
-                <h2>Your Stories Matter!</h2>
-                <p>We are dedicated to providing the best travel experiences in Sri Lanka. Your reviews motivate our team and guide other travelers.</p>
-                <div style="margin-top: 40px;">
-                    <i class="fas fa-quote-left" style="font-size: 40px; color: var(--primary); opacity: 0.3;"></i>
-                    <p style="font-size: 20px; font-style: italic; max-width: 800px; margin: 20px auto;">"A great way to see Sri Lanka. Venu Lanka Tours provided an exceptional service from start to finish. Highly recommended!"</p>
-                    <strong>— A Happy Traveler</strong>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-grid">
-            <div>
-                <img src="assets/venu-Logo.png" alt="Venu Lanka Tours" style="height: 40px; margin-bottom: 20px;">
-                <p>Experience the genuine warmth and kindness of Sri Lankan hospitality.</p>
-            </div>
-            <div>
-                <h3 class="footer-heading">Navigation</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="packages-destinations.html">Packages</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+            <h3>Trip Advisor</h3>
+            <p>Loved your journey with us? 💛 Share your experience and inspire others to explore Sri Lanka — review Venu Lanka Tours on TripAdvisor today!</p>
+            <!-- TripAdvisor Widget (official) -->
+            <div id="TA_cdswritereviewlgvi845" class="TA_cdswritereviewlgvi">
+                <ul id="xnpslKu" class="TA_links EiDNkIsq">
+                    <li id="eUi1KlAJ" class="kLc9p4">
+                        <a target="_blank" href="https://www.tripadvisor.com/">
+                            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="TripAdvisor">
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div>
-                <h3 class="footer-heading">Contact</h3>
-                <p>Sapumal Colany, Boralankada, Dehiowita, Sri Lanka</p>
-                <p>+94 70 377 1509</p>
-            </div>
-            <div>
-                <h3 class="footer-heading">Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
+            <script async src="https://www.jscache.com/wejs?wtype=cdswritereviewlgvi&amp;uniq=845&amp;locationId=34041904&amp;lang=en_US&amp;lang=en_US&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Venu Lanka Tours | Powered by Asseminate Solutions (Pvt) Ltd</p>
-        </div>
-    </footer>
 
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
+        <!-- Google Column -->
+        <div class="r-platform-card">
+            <div class="r-platform-icon-google">
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+            <h3>Google</h3>
+            <p>Enjoyed your trip with us? 🌿 Leave a Google review for Venu Lanka Tours and help other travelers find their perfect Sri Lankan adventure!</p>
+            <a href="https://g.page/r/CWwXP0PUDeTDEAI/review" target="_blank" class="r-review-btn">REVIEW US</a>
+        </div>
+
+        <!-- Facebook Column -->
+        <div class="r-platform-card">
+            <div class="r-platform-icon-facebook">
+                <i class="fa fa-facebook-f"></i>
+            </div>
+            <h3>Facebook</h3>
+            <p>We’d love to hear from you! 💬 Share your travel experience with Venu Lanka Tours on Facebook and help others discover the magic of Sri Lanka.</p>
+            <a href="https://www.facebook.com/people/venu-lanka-tours/61581256981717/" target="_blank" class="r-review-btn">Click here</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <img src="assets/xLogffo.png.pagespeed.ic.I9JwoiaQ7n.png" alt="Venu Lanka Tours" class="footer-logo">
+            <p><strong>Welcome to Venu Lanka Tours!</strong></p>
+            <p>Experience the genuine warmth and kindness of Sri Lankan hospitality.</p>
+        </div>
+        <div class="footer-col">
+            <h3>Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="contact.html">Get Directions</a></li>
+                <li><a href="packages-destinations.html">Packages</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>TripAdvisor</h3>
+            <div class="tripadvisor-footer">
+                <!-- Trustindex TripAdvisor widget -->
+				<div id="TA_cdswritereviewlgvi845" class="TA_cdswritereviewlgvi">
+            <ul id="xnpslKu" class="TA_links EiDNkIsq">
+                <li id="eUi1KlAJ" class="kLc9p4">
+                    <a target="_blank" href="https://www.tripadvisor.com/">
+                        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="TripAdvisor"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script async src="https://www.jscache.com/wejs?wtype=cdswritereviewlgvi&amp;uniq=845&amp;locationId=34041904&amp;lang=en_US&amp;lang=en_US&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
+			</div>
+        </div>
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Venu Lanka Tours,<br>Sapumal Colany, Boralankada, Dehiowita, Sri Lanka</p>
+            <p>+94 70 377 1509</p>
+            <p><a href="mailto:info@venulankatours.lk">info@venulankatours.lk</a></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/people/venu-lanka-tours/61581256981717/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tripadvisor"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+    <div class="container">
+        <p>
+            Copyright &copy; 2026 Venu Lanka Tours | Powered by 
+            <a href="https://www.asseminate.com/" target="_blank">
+                Asseminate Solutions (Pvt) Ltd
+            </a>
+        </p>
+    </div>
+</div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
