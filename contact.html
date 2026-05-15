@@ -1,166 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Venu Lanka Tours</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Custom CSS -->
+    <!-- Shared main styles -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Page‑specific Contact styles -->
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="scrolled">
-        <div class="container header-container">
-            <a href="index.html" class="logo">
+<!-- ==================== HEADER (identical to home page) ==================== -->
+<header class="site-header">
+    <div class="container header-container">
+        <div class="logo">
+            <a href="index.html">
                 <img src="assets/venu-Logo.png" alt="Venu Lanka Tours">
             </a>
-            
-            <nav class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="index.html#about" class="nav-link">About Us</a>
-                <a href="index.html#services" class="nav-link">Our Services</a>
-                <a href="packages-destinations.html" class="nav-link">Packages</a>
-                <a href="google-review.html" class="nav-link">Review Us</a>
-                <a href="contact.html" class="nav-link active">Contact</a>
-            </nav>
-
-            <a href="contact.html" class="btn">Book Now</a>
-
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About Us <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#about">Who We Are</a></li>
+                        <li><a href="index.html#members">Our Team</a></li>
+                        <li><a href="index.html#whychooseus">Why Choose Us</a></li>
+                        <li><a href="index.html#inside">Happy Moments</a></li>
+                        <li><a href="index.html#reviews">Clients' Reviews</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#services">Our Services</a></li>
+                <li class="dropdown">
+                    <a href="#">Packages <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="packages-destinations.html">Our Packages</a></li>
+                        <li><a href="index.html#destinations">Destinations</a></li>
+                    </ul>
+                </li>
+                <li><a href="google-review.html">Review Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
             <div class="mobile-toggle">
                 <i class="fas fa-bars"></i>
             </div>
+        </nav>
+        <div class="header-btn">
+            <a href="packages-destinations.html#quote" class="btn-book">Book Now</a>
         </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <!-- Page Banner -->
-        <section class="section-padding" style="background-color: var(--primary); color: var(--white); text-align: center; margin-top: var(--header-height);">
-            <div class="container">
-                <h1 style="color: var(--white);">Contact Us</h1>
-                <p>Get in touch with us for any inquiries or bookings.</p>
-            </div>
-        </section>
+<!-- ==================== HERO SECTION ==================== -->
+<section class="c-hero">
+    <div class="c-hero-content">
+        <h1 class="c-hero-title">Contact Us</h1>
+        <p class="c-hero-description">Do you want to enquire about our pricing, current offers and<br> arrangements we can help you with? Give us a call or send in<br> your concerns through the form below.</p>
+    </div>
+</section>
 
-        <!-- Contact Section -->
-        <section class="section-padding">
-            <div class="container grid grid-2">
-                <!-- Contact Info -->
-                <div>
-                    <h2>Get in Touch</h2>
-                    <p>Do you want to enquire about our pricing, current offers and arrangements we can help you with? Give us a call or send in your concerns through the form.</p>
-                    
-                    <div style="margin-top: 30px;">
-                        <div style="display: flex; gap: 15px; margin-bottom: 20px;">
-                            <i class="fas fa-map-marker-alt" style="color: var(--primary); font-size: 24px;"></i>
-                            <div>
-                                <strong>Address</strong>
-                                <p>Sapumal Colany, Boralankada, Dehiowita, Sri Lanka</p>
-                            </div>
-                        </div>
-                        <div style="display: flex; gap: 15px; margin-bottom: 20px;">
-                            <i class="fas fa-phone-alt" style="color: var(--primary); font-size: 24px;"></i>
-                            <div>
-                                <strong>Phone</strong>
-                                <p>+94 70 377 1509</p>
-                            </div>
-                        </div>
-                        <div style="display: flex; gap: 15px; margin-bottom: 20px;">
-                            <i class="fas fa-envelope" style="color: var(--primary); font-size: 24px;"></i>
-                            <div>
-                                <strong>Email</strong>
-                                <p>travel@venulankatours.lk</p>
-                            </div>
-                        </div>
-                        <div style="display: flex; gap: 15px; margin-bottom: 20px;">
-                            <i class="fas fa-clock" style="color: var(--primary); font-size: 24px;"></i>
-                            <div>
-                                <strong>Reception Hours</strong>
-                                <p>24 Hours Service</p>
-                            </div>
-                        </div>
-                    </div>
+<!-- ==================== CONTACT INFO & FORM ==================== -->
+<section class="c-contact-info">
+    <div class="container c-contact-grid">
+        <!-- Left Column: Office details -->
+        <div class="c-contact-details">
+            <h6 class="c-detail-label">Reception Office</h6>
+            <h4 class="c-detail-value">Sapumal Colany,<br>Boralankada,<br>Dehiowita</h4>
 
-                    <div class="social-icons" style="margin-top: 30px;">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
+            <h6 class="c-detail-label">Reception Hours</h6>
+            <h4 class="c-detail-value">24 Hours Service</h4>
+
+            <h6 class="c-detail-label">Contact</h6>
+            <h4 class="c-detail-value"><a href="https://wa.me/94703771509">+94 70 377 1509</a></h4>
+
+            <h6 class="c-detail-label">Email</h6>
+            <h4 class="c-detail-value"><a href="mailto:info@venulankatours.lk">info@venulankatours.lk</a></h4>
+        </div>
+
+        <!-- Right Column: Contact Form -->
+        <div class="c-contact-form">
+            <form action="#" method="post" class="c-form">
+                <div class="c-form-group">
+                    <label>Name <span class="c-form-required">*</span></label>
+                    <input type="text" name="name" required>
                 </div>
-
-                <!-- Contact Form -->
-                <div>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="What is this about?">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
+                <div class="c-form-group">
+                    <label for="email">Email <span class="c-form-required">*</span></label>
+                    <input type="email" name="email" required>
                 </div>
-            </div>
-        </section>
-
-        <!-- Map Section -->
-        <section style="height: 450px; width: 100%;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.83416416666!2d80.266666!3d7.016666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae307137f8f9f8f%3A0x7f8f9f8f9f8f9f8f!2sDehiowita!5e0!3m2!1sen!2slk!4v1620000000000!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-grid">
-            <div>
-                <img src="assets/venu-Logo.png" alt="Venu Lanka Tours" style="height: 40px; margin-bottom: 20px;">
-                <p>Experience the genuine warmth and kindness of Sri Lankan hospitality.</p>
-            </div>
-            <div>
-                <h3 class="footer-heading">Navigation</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="packages-destinations.html">Packages</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="footer-heading">Contact</h3>
-                <p>Sapumal Colany, Boralankada, Dehiowita, Sri Lanka</p>
-                <p>+94 70 377 1509</p>
-            </div>
-            <div>
-                <h3 class="footer-heading">Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <div class="c-form-group">
+                    <label for="subject">Subject <span class="c-form-required">*</span></label>
+                    <input type="text" name="subject" required>
                 </div>
+                <div class="c-form-group">
+                    <label for="message">Message <span class="c-form-required">*</span></label>
+                    <textarea name="message" rows="5" required></textarea>
+                </div>
+                <div class="c-form-group">
+                    <button type="submit" class="c-submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== GOOGLE MAP SECTION ==================== -->
+<section class="c-map">
+    <div class="c-map-container">
+        <iframe 
+            src="https://maps.google.com/maps?q=Dehiowita&t=m&z=12&output=embed&iwloc=near" 
+            title="Dehiowita map" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <img src="assets/xLogffo.png.pagespeed.ic.I9JwoiaQ7n.png" alt="Venu Lanka Tours" class="footer-logo">
+            <p><strong>Welcome to Venu Lanka Tours!</strong></p>
+            <p>Experience the genuine warmth and kindness of Sri Lankan hospitality.</p>
+        </div>
+        <div class="footer-col">
+            <h3>Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="contact.html">Get Directions</a></li>
+                <li><a href="packages-destinations.html">Packages</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>TripAdvisor</h3>
+            <div class="tripadvisor-footer">
+                <!-- Trustindex TripAdvisor widget -->
+				<div id="TA_cdswritereviewlgvi845" class="TA_cdswritereviewlgvi">
+            <ul id="xnpslKu" class="TA_links EiDNkIsq">
+                <li id="eUi1KlAJ" class="kLc9p4">
+                    <a target="_blank" href="https://www.tripadvisor.com/">
+                        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="TripAdvisor"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script async src="https://www.jscache.com/wejs?wtype=cdswritereviewlgvi&amp;uniq=845&amp;locationId=34041904&amp;lang=en_US&amp;lang=en_US&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
+			</div>
+        </div>
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Venu Lanka Tours,<br>Sapumal Colany, Boralankada, Dehiowita, Sri Lanka</p>
+            <p>+94 70 377 1509</p>
+            <p><a href="mailto:info@venulankatours.lk">info@venulankatours.lk</a></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/people/venu-lanka-tours/61581256981717/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tripadvisor"></i></a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Venu Lanka Tours | Powered by Asseminate Solutions (Pvt) Ltd</p>
-        </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+    <div class="container">
+        <p>
+            Copyright &copy; 2026 Venu Lanka Tours | Powered by 
+            <a href="https://www.asseminate.com/" target="_blank">
+                Asseminate Solutions (Pvt) Ltd
+            </a>
+        </p>
+    </div>
+</div>
+</footer>
 
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
