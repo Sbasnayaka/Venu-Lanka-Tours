@@ -1,0 +1,138 @@
+/* ==================== DESTINATIONS PAGE SPECIFIC STYLES ==================== */
+
+/* ----- HERO SECTION ----- */
+.d-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/hero-slider-p02.png') no-repeat center center/cover;
+    background-size: cover;
+    min-height: 77vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    color: #fff;
+}
+.d-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-left: 150px;
+}
+.d-hero-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.d-hero-description {
+    font-size: 18px;
+    line-height: 1.2;
+}
+@media (max-width: 768px) {
+    .d-hero {
+        min-height: 350vh;
+    }
+    .d-hero-title {
+        font-size: 70px;
+    }
+    .d-hero-description {
+        font-size: 20px;
+    }
+}
+
+/* ----- DESTINATIONS GRID ----- */
+.d-destinations {
+    padding: 80px 0;
+    background: #fff;
+}
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+.d-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.d-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+.d-card-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.d-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.d-card:hover .d-card-image img {
+    transform: scale(1.05);
+}
+.d-card-content {
+    padding: 20px;
+}
+.d-card-content h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #333;
+}
+.d-card-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.d-explore-btn {
+    display: inline-block;
+    color: #4ab5db;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.d-explore-btn:hover {
+    color: #0e88b4;
+}
+@media (max-width: 768px) {
+    .d-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----- CTA SECTION ----- */
+.d-cta {
+    background: #f0f4f8;
+    padding: 60px 0;
+    text-align: center;
+}
+.d-cta h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+}
+.d-cta p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+.d-cta-btn {
+    display: inline-block;
+    background: #4ab5db;
+    color: #fff;
+    padding: 14px 34px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+.d-cta-btn:hover {
+    background: #0e88b4;
+}
