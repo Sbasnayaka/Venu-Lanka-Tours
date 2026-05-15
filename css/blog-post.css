@@ -36,13 +36,21 @@
 }
 @media (max-width: 768px) {
     .bp-hero {
-        min-height: 350vh;
+        min-height: 400px;
+        padding: 60px 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .bp-hero-content {
+        margin-left: 0;
+        padding: 0 20px;
     }
     .bp-title {
-        font-size: 70px;
+        font-size: 40px;
     }
     .bp-meta {
-        font-size: 20px;
+        font-size: 14px;
+        justify-content: center;
         gap: 15px;
     }
 }

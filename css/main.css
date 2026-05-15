@@ -872,3 +872,145 @@ container.section-subtitle {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
+
+/* ==========================================================================
+   MOBILE RESPONSIVENESS (MAX-WIDTH: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    .site-header {
+        height: 70px;
+        padding: 10px 0;
+    }
+    .logo img {
+        max-width: 120px;
+    }
+    .mobile-toggle {
+        display: block;
+        margin-left: 20px;
+    }
+    .header-btn {
+        display: none; /* Hide Book Now button on mobile header to save space */
+    }
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: #fff;
+        flex-direction: column;
+        gap: 0;
+        transition: 0.4s;
+        overflow-y: auto;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-menu li {
+        width: 100%;
+    }
+    .nav-menu a {
+        color: #222;
+        padding: 15px 25px;
+        display: block;
+        font-size: 16px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .nav-menu a:hover, .nav-menu a.active {
+        color: #4ab5db;
+    }
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+        box-shadow: none;
+        padding-left: 20px;
+        background: #f9f9f9;
+    }
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        justify-content: center;
+        min-height: 500px;
+    }
+    .hero-content {
+        padding: 0 20px;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Common Layouts */
+    .two-columns, .D-two-columns, .why-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .two-columns > *, .D-two-columns > *, .why-text-col, .why-image-col, .why-list-col {
+        flex: none;
+        width: 100%;
+    }
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Grids */
+    .services-grid, .destinations-grid, .packages-grid, .products-grid, .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sections Padding */
+    .services, .destinations, .packages, .reviews, .why-choose-us, .organic-products {
+        padding: 60px 0;
+    }
+    .section-subtitle {
+        margin-bottom: 30px;
+    }
+
+    /* About Section */
+    .about-content h2 {
+        font-size: 32px;
+    }
+    .about-image img {
+        max-width: 100%;
+    }
+
+    /* Why Choose Us */
+    .why-image-frame {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        flex-direction: column;
+    }
+    .gallery-col {
+        width: 100%;
+    }
+
+    /* Final CTA */
+    .final-cta {
+        height: auto;
+        padding: 80px 0;
+    }
+    .final-cta h2 {
+        font-size: 30px;
+    }
+    .phone-link {
+        font-size: 28px;
+    }
+    .cta-book-text {
+        margin-top: 40px;
+    }
+}

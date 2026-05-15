@@ -29,13 +29,20 @@
 }
 @media (max-width: 768px) {
     .d-hero {
-        min-height: 350vh;
+        min-height: 400px;
+        padding: 80px 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .d-hero-content {
+        margin-left: 0;
+        padding: 0 20px;
     }
     .d-hero-title {
-        font-size: 70px;
+        font-size: 40px;
     }
     .d-hero-description {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 

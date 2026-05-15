@@ -31,7 +31,13 @@
 /* Responsive Hero */
 @media (max-width: 768px) {
     .r-hero {
-        min-height: 50vh;
+        min-height: 400px;
+        padding: 60px 0;
+        text-align: center;
+    }
+    .r-hero-content {
+        margin-left: 0;
+        padding: 0 20px;
     }
     .r-hero-title {
         font-size: 36px;
